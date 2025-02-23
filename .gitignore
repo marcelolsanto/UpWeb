@@ -41,3 +41,4 @@ temp/
 # Ignorar arquivos fora da pasta do projeto
 ../*
 !../projeto-UpWeb/
+.vercel
