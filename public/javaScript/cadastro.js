@@ -16,6 +16,7 @@ function cadastrar() {
     }).then(function (response) {
         // Se a resposta for bem-sucedida, redireciona para a página index.html
         if (response.ok) {
+            alert('Contato enviado com sucesso! Verifique seu e-mail.');
             window.location.href = 'index.html';
         } else {
             // Se ocorrer um erro, exibe a mensagem de erro no console e na página

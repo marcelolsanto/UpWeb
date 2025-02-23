@@ -13,7 +13,7 @@ const transporter = nodemailer.createTransport({
 /**
  * Função para enviar um e-mail com os dados do formulário
  * @param {string} name - Nome do remetente
- * @param {string} email - E-mail do remetente
+ * @param {string} email - E-mails dos destinatários, separados por vírgulas
  * @param {string} celular - CEP do remetente
  */
 const sendEmail = async (name, email, celular) => {
@@ -22,7 +22,13 @@ const sendEmail = async (name, email, celular) => {
     from: process.env.EMAIL_USER, // Remetente do e-mail
     to: process.env.EMAIL_RECEIVER, // Destinatário do e-mail (definido nas variáveis de ambiente)
     subject: 'Solicitação de serviços para criação de sites', // Assunto do e-mail
-    text: `Olá gostaria de iniciar meu atendimento:\nNome: ${name}\nEmail: ${email}\nCEP: ${celular}` // Corpo do e-mail com os dados do formulário
+    text: `Olá gostaria de iniciar meu atendimento:\n
+    Nome: ${name}\nEmail: ${email}\nContato: ${celular}
+    atenciosamente,\n
+    Marcelo Santos\n
+    Desenvolvedor Sistemas - Sites-UpWeb\n
+    (11) 9 7298-0409\n
+` // Corpo do e-mail com os dados do formulário
   };
 
   try {
