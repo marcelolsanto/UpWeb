@@ -1,0 +1,43 @@
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Logs
+logs/
+*.log
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Diretórios do sistema
+.DS_Store
+Thumbs.db
+
+# Configurações do IDE
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# Arquivos de ambiente
+.env
+
+# Outros arquivos e diretórios
+coverage/
+dist/
+build/
+tmp/
+temp/
+*.bak
+*.swp
+*.zip
+*.tar.gz
+*.rar
+
+# Ignorar arquivos fora da pasta do projeto
+../*
+!../projeto-UpWeb/

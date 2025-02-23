@@ -1,0 +1,329 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+.head {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.05));
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    height: 170px;
+    width: 100%;
+    z-index: 1;
+}
+
+.head_imag{
+    height: 8rem;
+    width: 8rem;
+    position: relative;
+    left: 5rem;
+    overflow: hidden;
+    border: 10px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    box-shadow: 2.5px 2.5px 10px rgb(0, 255, 255);
+    cursor: pointer;
+}
+
+.head_imag img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    opacity: .95;
+    box-shadow: 2.5px 2.5px 10px rgb(0, 255, 255);
+    opacity: .95;
+}
+
+.head_menu{
+    position: relative;
+}
+
+.menu {
+    width: 45rem;
+    position: relative;
+    right: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-shadow: 2.5px 2.5px 10px rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.menu :hover{
+    color: #00FFFF;
+    text-shadow: 2.5px 2.5px 10px rgb(0, 255, 255);
+    transition-duration: .9s;
+}
+
+.menu_item{
+    color: white;
+    text-shadow: 0 0 5px rgba(85, 84, 84, 
+    0.3);
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+}
+
+h3{
+    color: white;
+    text-shadow: 3px 3px 10px 
+    rgb(0, 0, 0);
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+}
+
+p{
+    color:white;
+    text-shadow: 2px 2px 10px 
+    rgb(0, 0, 0);
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+}
+
+.mail {
+    height: 3rem;
+    width: 330px;
+    border-radius: 7px;
+    box-shadow: 2.5px 2.5px 4px rgb(0, 0, 0);
+    color: black;
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}
+
+.mail:hover{
+    box-shadow: 2.5px 2.5px 10px rgb(0, 255, 255);
+    transition-duration: .9s;
+}
+
+.mail1{
+    height: 2rem;
+    width: 330px;
+    border-radius: 7px;
+    box-shadow: 2.5px 2.5px 4px rgb(0, 0, 0);
+    color: black;
+    background-color: white;
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}
+
+.mail1:hover{
+    box-shadow: 2.5px 2.5px 10px rgb(0, 255, 255);
+    transition-duration: .9s;
+}
+
+.btn_home{
+    height: 3rem;
+    width: 150px;
+    margin-left: 5px;
+    color: whitesmoke;
+    background: linear-gradient(to bottom, rgb(0, 255, 255), rgb(0, 128, 128));
+    border-radius: 7px;
+    box-shadow: 2.5px 2.5px 4px rgb(0, 0, 0);
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.btn_home:hover {
+    background: linear-gradient(to top, rgb(0, 255, 255), rgb(0, 128, 128));
+    box-shadow: 2.5px 2.5px 10px rgb(0, 255, 255);
+    transition-duration: .9s;
+}
+
+label{
+    color:white;
+    text-shadow: 2px 2px 10px 
+    rgb(0, 0, 0);
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+}
+
+#cadastro{
+    width: 100%;
+    height: 90vh;
+    overflow: hidden;
+}
+
+.cadastro_imag{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.99);
+}
+
+.cadastro_imag img{
+    width: 100%;
+    height: 100%;
+    opacity: 0.95;
+    object-fit: cover;
+    transition: ease-in-out;
+    animation-name: zoom;
+    animation-duration: 30s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes zoom {
+    0%,100% {transform: scale(1);}
+    50% {transform: scale(1.2);}
+}
+
+.banner_cadastro {
+    position: relative;
+    width: 100%;
+    height: 21rem;
+    bottom: 26rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.banner_cadastro .card{
+    position: relative;
+    width: 530px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.btn_cadastro{
+    width: 330px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.btn_cadastro .btn_home{
+    margin: 0;
+}
+
+.footer {
+    background: linear-gradient(to bottom, rgb(0, 0, 0), rgb(0, 0, 0));
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer p {
+    position: relative;
+    left: 5rem;
+    font-size: 1rem;
+}
+
+.suspiro {
+    background: linear-gradient(to bottom, rgb(0, 0, 0), rgb(0, 0, 0));
+    height: 1vh;
+    width: 100%;
+}
+
+.suspiro .p {
+    font-size: 1rem;
+}
+
+.suspiro_header {
+    background-color: black;
+    height: 1vh;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+}
+
+a:-webkit-any-link {
+    color: white;
+}
+
+.nav .list {
+    position: relative;
+    width: 10rem;
+    left: -5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-shadow: 2.5px 2.5px 10px rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.menu_footer {
+    text-shadow: 2.5px 2.5px 10px rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.menu_footer :hover {
+    text-shadow: 2.5px 2.5px 10px rgb(0, 255, 255);
+    transition-duration: .9s;
+}
+
+.indicativo {
+    text-shadow: 2.5px 2.5px 10px rgb(0, 0, 0);
+    cursor: pointer;
+    transition-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    animation-name: indicativo;
+    animation-duration: 1s;
+    animation-delay: 2s;
+    animation-iteration-count: 5;
+    color: white;
+    z-index: 3;
+}
+
+@keyframes indicativo {
+
+    0%,
+    100% {
+        transform: translateY(0rem);
+    }
+
+    50% {
+        transform: translateY(4rem);
+    }
+}
+
+.indicativo :hover {
+    text-shadow: 2.5px 2.5px 10px rgb(0, 255, 255);
+    transition-duration: .9s;
+}
+
+.fa,
+.fas {
+    font-weight: 900;
+    position: fixed;
+    bottom: 12vh;
+    left: 97%;
+    transform: translateX(-50%);
+    color: white;
+    z-index: 3;
+    text-shadow: 2.5px 2.5px 10px rgb(32, 4, 4);
+    cursor: pointer;
+}

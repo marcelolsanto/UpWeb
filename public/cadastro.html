@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marcelo Santos || Serviços de Criação e Manutenção de Sites</title>
+    <meta name="description"
+        content="Oferecemos serviços de criação e manutenção de sites, além de campanhas de Google Ads com 3 dias gratuitos para novos clientes.">
+    <link rel="canonical" href="https://marcelosantos.azurewebsites.net/">
+    <meta name="author" content="Marcelo Santos">
+    <meta name="robots" content="index, follow">
+    <!-- Open Graph Facebook -->
+    <meta property="og:title" content="Marcelo Santos || Serviços de Criação e Manutenção de Sites">
+    <meta property="og:description"
+        content="Oferecemos serviços de criação e manutenção de sites, além de campanhas de Google Ads com 3 dias gratuitos para novos clientes.">
+    <meta property="og:url" content="https://marcelosantos.azurewebsites.net/">
+    <meta property="og:site_name" content="Serviços de Criação e Manutenção de Sites">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="img/home.jpg">
+    <!-- Twitter -->
+    <meta name="twitter:title" content="Marcelo Santos || Serviços de Criação e Manutenção de Sites">
+    <meta name="twitter:description"
+        content="Oferecemos serviços de criação e manutenção de sites, além de campanhas de Google Ads com 3 dias gratuitos para novos clientes.">
+    <meta name="twitter:url" content="https://marcelosantos.azurewebsites.net/">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:image" content="img/home.jpg">
+    <!-- apple -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon_io/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon_io/android-chrome-512x512.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon_io/android-chrome-192x192.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <script src="https://kit.fontawesome.com/729e0ee7d1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/cadastro.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="head">
+            <div class="head_imag">
+                <img src="img/logo.png">
+            </div>
+            <nav class="head_menu">
+                <ul class="menu">
+                    <li class="menu_item">
+                        <a href="index.html" class="menu-link">Home</a>
+                    </li>
+                    <li class="menu_item">
+                        <a href="index.html#servicos" class="menu-link">Serviços</a>
+                    </li>
+                    <li class="menu_item">
+                        <a href="index.html#promocoes" class="menu-link">Promoções</a>
+                    </li>
+                    <li class="menu_item">
+                        <a href="cadastro.html" class="menu-link">Contato</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div class="suspiro_header"></div>
+        <section class="cadastro" id="cadastro">
+            <div class="cadastro_imag">
+                <img src="img/FavoIconi.png">
+            </div>
+            <div class="banner_cadastro">
+                <form id="form_cadastro" class="card" method="post" onsubmit="return cadastrar()">
+                    <h3 id="mensagem1">Enviar contato</h3>
+                    <p id="p4_mensagem" style=" display: none;">
+                        Erro ao enviarr</p>
+                    <input type="text" class="mail" autofocus="autofocus" placeholder="Nome completo" required
+                        minlength="4" name="nome">
+                    <input class="mail" placeholder="Digite seu e-mail!" required minlength="6" type="email"
+                        name="email">
+                    <input class="mail" placeholder="digite seu numer: (11) 9 9999 - 9999" required minlength="11"
+                        type="number" name="celular">
+                    <div class="btn_cadastro">
+                        <input type="submit" id="btn_cadastro" value="Enviar contato" class="btn_home">
+                    </div>
+                </form>
+            </div>
+        </section>
+        <footer class="footer">
+            <p>Conecte-se conosco: marcelolsantos30@gmail.com || +55 (11) 97298-0409 ||
+                © 2025 Sites UpWeb - Todos os direitos reservados</p>
+            <nav class="nav">
+                <ul class="list">
+                    <li class="menu_footer">
+                        <a href="https://www.linkedin.com/in/marcelo-santos-00093984/" class="menu-link">
+                            <i class="fab fa-linkedin fa-2x"></i></a>
+                    </li>
+                    <li class="menu_footer">
+                        <a href="https://github.com/marcelolsanto" class="menu-link"><i
+                                class="fab fa-github-square fa-2x"></i></a>
+                    </li>
+                    <li class="menu_footer">
+                        <a href="https://www.instagram.com/marcelolsantos30/" class="menu-link"><i
+                                class="fab fa-instagram-square fa-2x"></i></a>
+                    </li>
+                </ul>
+            </nav>
+        </footer>
+</body>
+
+</html>
+<script src="javaScript/cadastro.js"></script>
