@@ -81,11 +81,15 @@ function onError(error) {
  * Event listener for HTTP server "listening" event.
  */
 
-function onListening() {
+async function onListening() {
   var addr = server.address();
   var bind = typeof addr === 'string'
     ? 'pipe ' + addr
     : 'port ' + addr.port;
   debug('Listening on ' + bind);
   console.log(`Servidor rodando em: http://localhost:${port}/index.html`);
+
+  // Use dynamic import to load the 'open' module
+  const open = (await import('open')).default;
+  open(`http://localhost:${port}/index.html`);
 }
