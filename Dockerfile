@@ -16,7 +16,7 @@ COPY . .
 # Defina variáveis de ambiente
 ENV EMAIL_USER=marcelolsantos30@gmail.com
 ENV EMAIL_PASS=jjyyxewiztjuptko
-ENV EMAIL_RECEIVER=fonte-de-luz@hotmail.com
+ENV EMAIL_RECEIVER=sitesupweb0@gmail.com
 
 # Exponha a porta que a aplicação irá rodar
 EXPOSE 3000
