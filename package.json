@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-    "dev": "nodemon ./bin/www"
+    "dev": "nodemon ./bin/www",
+    "build": "npm ci --only=production"
   },
   "dependencies": {
     "body-parser": "^1.19.0",
@@ -22,5 +23,8 @@
   "keywords": [],
   "author": "Marcelo_Santos",
   "license": "ISC",
-  "description": "Projeto UpWeb é uma aplicação web desenvolvida com Node.js e Express para enviar e-mails com dados de formulários. Utiliza o Nodemailer para envio de e-mails e o dotenv para gerenciamento de variáveis de ambiente."
+  "description": "Projeto UpWeb é uma aplicação web desenvolvida com Node.js e Express para enviar e-mails com dados de formulários. Utiliza o Nodemailer para envio de e-mails e o dotenv para gerenciamento de variáveis de ambiente.",
+  "engines": {
+    "node": ">=14.x"
+  }
 }
