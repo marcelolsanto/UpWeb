@@ -13,14 +13,14 @@ const transporter = nodemailer.createTransport({
 /**
  * Função para enviar um e-mail com os dados do formulário
  * @param {string} name - Nome do remetente
- * @param {string} email - E-mails dos destinatários, separados por vírgulas
- * @param {string} celular - CEP do remetente
+ * @param {string} email - E-mail do usuário
+ * @param {string} celular - Contato do usuário
  */
 const sendEmail = async (name, email, celular) => {
   // Configura as opções do e-mail
   const mailOptions = {
     from: process.env.EMAIL_USER, // Remetente do e-mail
-    to: email, // Destinatário do e-mail (definido nas variáveis de ambiente)
+    to: `${process.env.EMAIL_RECEIVER},${email}`, // Destinatários do e-mail
     subject: 'Solicitação de serviços para criação de sites', // Assunto do e-mail
     html: `
     <!DOCTYPE html>
@@ -82,7 +82,8 @@ const sendEmail = async (name, email, celular) => {
             <p><strong>Marcelo Santos</strong><br>
             💻 Desenvolvedor de Sistemas - <strong>Sites-UpWeb</strong><br>
             📞 (11) 9 7298-0409</p>
-            <p>🔗 <em>Sites modernos, funcionais e do jeito que você precisa!</em></p>
+            <p>🔗 <em>Sites modernos, funcionais e do jeito que você precisa: https://sitesupweb.vercel.app/index.html</em></p>
+
         </div>
     </div>
 </body>
@@ -90,10 +91,13 @@ const sendEmail = async (name, email, celular) => {
     ` // Corpo do e-mail com os dados do formulário em HTML
   };
 
+  console.log('Destinatários:', mailOptions.to);
+
   try {
     // Envia o e-mail usando o transporte configurado
     let info = await transporter.sendMail(mailOptions);
     console.log('E-mail enviado com sucesso:', info.response);
+    console.log('E-mail:', info.to);
     return info.response;
   } catch (error) {
     console.log('Erro ao enviar e-mail:', error);
