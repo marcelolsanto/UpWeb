@@ -74,7 +74,7 @@ const sendEmail = async (name, email, celular) => {
         <div class="info">
             <p><strong>📌 Nome:</strong> ${name}</p>
             <p><strong>📌 E-mail:</strong> ${email}</p>
-            <p><strong>📌 Contato:</strong> ${celular}</p>
+            <p><strong>📌 Contato:</strong>https://wa.me/55${celular}?text=Ol%C3%A1%2C%20Gostaria%20de%20saber%20mais%21 </p>
         </div>
         <p>Em breve, retornaremos para entender melhor suas necessidades e garantir que seu site seja exatamente como você imagina (ou ainda melhor!).</p>
         <div class="footer">
@@ -82,7 +82,7 @@ const sendEmail = async (name, email, celular) => {
             <p><strong>Marcelo Santos</strong><br>
             💻 Desenvolvedor de Sistemas - <strong>Sites-UpWeb</strong><br>
             📞 (11) 9 7298-0409</p>
-            <p>🔗 <em>Sites modernos, funcionais e do jeito que você precisa: https://sitesupweb.vercel.app/index.html</em></p>
+            <p>🔗 <em>Sites modernos, funcionais e do jeito que você precisa: upweb-fth3b5hnb3f8e3bz.brazilsouth-01.azurewebsites.net</em></p>
 
         </div>
     </div>
