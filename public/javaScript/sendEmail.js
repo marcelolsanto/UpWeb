@@ -74,7 +74,7 @@ const sendEmail = async (name, email, celular) => {
         <div class="info">
             <p><strong>📌 Nome:</strong> ${name}</p>
             <p><strong>📌 E-mail:</strong> ${email}</p>
-            <p><strong>📌 Contato:</strong>https://wa.me/55${celular}?text=Ol%C3%A1%2C%20Gostaria%20de%20saber%20mais%21 </p>
+            <p><strong>📌 Contato:</strong> ${celular}</p>
         </div>
         <p>Em breve, retornaremos para entender melhor suas necessidades e garantir que seu site seja exatamente como você imagina (ou ainda melhor!).</p>
         <div class="footer">
