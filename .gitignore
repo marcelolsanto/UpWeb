@@ -15,18 +15,20 @@ pids/
 .DS_Store
 Thumbs.db
 
-# Configurações do IDE
+# Configurações do IDE e Editores
 .idea/
 .vscode/
+.vs/
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 
-# Arquivos de ambiente
+# Arquivos de ambiente e chaves (MUITO IMPORTANTE)
 .env
+.env.local
 
-# Outros arquivos e diretórios
+# Builds, temporários e outros
 coverage/
 dist/
 build/
@@ -38,7 +40,5 @@ temp/
 *.tar.gz
 *.rar
 
-# Ignorar arquivos fora da pasta do projeto
-../*
-!../projeto-UpWeb/
-.vercel
+# Deploy
+.vercel/
